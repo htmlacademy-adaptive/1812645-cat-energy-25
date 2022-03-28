@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [lmarch](https://up.htmlacademy.ru/adaptive/25/user/1812645).
-* Наставник: `Неизвестно`.
+* Студент: 🚀 [lmarch](https://up.htmlacademy.ru/adaptive/25/user/1812645).
+* Наставник: [✨ Александр Панасюк ✨](https://htmlacademy.ru/profile/sasha_oldsport).
 
 ---
 
