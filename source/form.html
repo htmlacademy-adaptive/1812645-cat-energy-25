@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  </head>
+
+  <body class="page-body">
+    <div class="main-header">
+      <a class="main-header__logo logo" href="#">
+        <img src="img/logo-mobile.svg" alt="Логотип сайта" width="34" height="38">
+      </a>
+      <img src="img/logo-desc.svg" alt="Название сайта" width="101" height="18">
+
+      <button class="main-header__menu-button open-menu" type="button">
+        <img src="img/menu-button.svg" alt="Открыть меню" width="24" height="18">
+      </button>
+    </div>
+
+    <div class="main-nav">
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list menu-list">
+          <li class="menu-list__item menu-list__item--active">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="#">Подбор прогаммы</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <main class="main-container">
+      <h1 class="main-container__title">Подбор программы</h1>
+      <p class="main-container__desc">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+
+      <form class="selection-form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="selection-form__wrapper">
+          <div class="selection-form__cat-data cat-data">
+            <label class="control__label" for="cat-name">ИМЯ:*</label>
+            <input class="control__input" id="cat-name" type="text" name="cat-name" placeholder="Барсик">
+
+            <label class="control__label" for="cat-weight">Вес (кг):*</label>
+            <input class="control__input" id="cat-weight" type="text" name="cat-weight" placeholder="7">
+
+            <label class="control__label" for="cat-age">Возраст (лет):</label>
+            <input class="control__input" id="cat-age" type="text" name="cat-age" placeholder="7">
+          </div>
+
+          <div class="selection-form__goal goal">
+            <label>
+              <input class="goal__input" type="radio" name="target" value="weight-loss">
+              <span class="input__desc">Похудение</span>
+            </label>
+            <label>
+              <input class="goal__input" type="radio" name="target" value="weight-gain">
+              <span class="input__desc">Набор массы</span>
+            </label>
+            <label>
+              <input class="goal__input goal__input--checked" type="radio" name="target" value="don't-know" checked>
+              <span class="input__desc">Не знаю (Нужен ваш совет)</span>
+            </label>
+          </div>
+
+          <div class="selection-form__contacts-client contacts-client">
+            <h2 class="form__title">Контактные данные (владельца кота)</h2>
+
+            <label class="control__label" for="email">E-mail:*</label>
+            <input class="control__input control__input--email" id="email" type="text" name="email" placeholder="kuklachev@gmail.com">
+
+            <label class="control__label" for="phone">Телефон:*</label>
+            <input class="control__input control__input--phone" id="phone" type="text" name="phone" placeholder="8 (960) 900-60-90">
+          </div>
+
+          <div class="selection-form__comment comment">
+            <h2 class="form__title">Комментарий</h2>
+            <label class="visually-hidden">
+              <textarea class="comment__input" id="comment" name="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </label>
+          </div>
+
+          <div class="selection-form__additionally additionally">
+            <h2 class="form__title">Дополнительно</h2>
+            <label>
+              <input class="additionally__input additionally__input--checked" type="checkbox" name="target" checked>
+              <span class="input__desc">Сахарозаменитель</span>
+            </label>
+
+            <label>
+              <input class="additionally__input" type="checkbox" name="target">
+              <span class="input__desc">Питьевая вода</span>
+            </label>
+
+            <label>
+              <input class="additionally__input" type="checkbox" name="target">
+              <span class="input__desc">Молоко</span>
+            </label>
+
+            <label>
+              <input class="additionally__input" type="checkbox" name="target">
+              <span class="input__desc">Витамины</span>
+            </label>
+          </div>
+
+          <button class="button button--main">Отправить заявку</button>
+          <p class="selection-form__desc">* — Обязательные поля</p>
+        </div>
+      </form>
+    </main>
+
+    <footer class="main-footer">
+      <h2 class="visually-hidden">Подвал сайта</h2>
+      <div class="main-footer__address address">
+        <h3 class="address__title">Приглашаем к сотрудничеству дилеров!</h3>
+        <p class="address__desc">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <img src="img/location.jpg" alt="Карта с расположением магазина" width="640" height="724">
+
+      <div class="main-footer__social social">
+        <img src="img/logo-desc.svg" alt="Логотип компании Energy" width="101" height="18">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <img src="img/vkontakte.svg" alt="Мы в контакте" width="28" height="22">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <img src="img/youtube.svg" alt="Мы в Ютубе" width="28" height="22">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <img src="img/telegram.svg" alt="Мы в телеграмме">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="main-footer__copyright copyright">
+        <p class="copyright__text">HTML Academy</p>
+        <a href="" class="copyright__link">
+          <img src="img/html-academy.svg" alt="Логотип HTML Academy" width="27" height="34">
+        </a>
+      </div>
+    </footer>
+
+  </body>
+</html>
