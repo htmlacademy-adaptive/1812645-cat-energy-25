@@ -1,0 +1,39 @@
+.radio {
+  position: relative;
+}
+
+.radio__mark {
+  position: absolute;
+  top: -6px;
+  left: 0;
+
+  width: 30px;
+  height: 30px;
+
+  content: "dg";
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.radio__input:hover + .radio__mark {
+  border: 1px solid #bababa;
+}
+
+.radio__input:checked + .radio__mark::before {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+
+  width: 14px;
+  height: 14px;
+
+  content: "";
+  background-color: #68b738;
+  border-radius: 50%;
+}
+
+.radio__desc {
+  padding-left: 46px;
+}
