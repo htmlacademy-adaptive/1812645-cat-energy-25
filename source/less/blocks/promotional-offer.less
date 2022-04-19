@@ -1,0 +1,33 @@
+.promotional-offer {
+  position: relative;
+  width: 280px;
+  height: 290px;
+
+  background-image: url("../img/cat-in-case.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.promotional-offer__wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 187px 59px 0;
+
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.promotional-offer__title {
+  text-align: center;
+  width: 161px;
+
+  margin: 0;
+}
+
+.promotional-offer::before {
+  position: absolute;
+  top: 59px;
+  right: 101px;
+
+  content: url("../img/icon-basket.svg");
+}
