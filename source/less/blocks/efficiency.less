@@ -1,13 +1,22 @@
 .efficiency {
-  width: 1220px;
-  margin: 0 auto;
+  box-sizing: border-box;
+  width: 320px;
+
+  margin: 0 auto 49px;
+  padding: 0 20px;
+}
+
+.efficiency__title {
+  margin: 0 0 40px;
 }
 
 .efficiency__list {
-  display: flex;
-  //flex-direction: column;
+  .configuring-list;
 
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.efficiency__item:not(:last-child) {
+  margin-bottom: 20px;
 }
