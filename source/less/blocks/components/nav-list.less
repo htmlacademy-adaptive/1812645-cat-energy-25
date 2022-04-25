@@ -1,9 +1,5 @@
 .nav__list {
   .configuring-list;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .nav__item {
@@ -34,4 +30,27 @@
   .configuring-link;
 
   padding: 22px 0 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav__item:not(:last-child) {
+    margin-right: 36px;
+  }
+
+  .nav__item::before {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .nav__link {
+    .configuring-link;
+
+    padding: 20px 0 20px;
+  }
 }

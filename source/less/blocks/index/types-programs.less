@@ -9,4 +9,43 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  padding: 0 20px;
+}
+
+.types-programs__program:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .types-programs {
+    width: 768px;
+    margin: 0 auto 45px;
+  }
+
+  .types-programs__list {
+    padding: 0 30px;
+  }
+
+  .types-programs__program:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .types-programs {
+    width: 1440px;
+    margin: 0 auto 71px;
+  }
+
+  .types-programs__list {
+    display: flex;
+    flex-direction: row;
+
+    padding: 0 110px;
+  }
+
+  .types-programs__program:not(:last-child) {
+    margin-bottom: 0;
+  }
 }

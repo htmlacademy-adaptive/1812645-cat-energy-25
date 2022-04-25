@@ -1,6 +1,5 @@
 .main-header {
-  box-sizing: border-box;
-  width: 320px;
+  width: 280px;
   margin: 0 auto;
   padding: 0 20px;
 
@@ -11,4 +10,43 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 708px;
+    margin: 30px auto 62px;
+    padding: 0 30px;
+  }
+
+  .logo__menu-button {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header {
+    position: relative;
+    z-index: 1;
+    width: 1220px;
+    margin: 53px auto 111px;
+    padding: 0 110px;
+  }
+
+  .main-header__nav::before {
+      position: absolute;
+      z-index: 0;
+      top: -53px;
+      right: 0;
+
+      content: "";
+      width: 720px;
+      height: 692px;
+      background-color: #68b738;
+  }
 }

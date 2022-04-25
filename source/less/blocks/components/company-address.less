@@ -2,9 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box;
-
-  padding: 26px 20px;
 
   background-color: #ffffff;
 }
@@ -19,4 +16,51 @@
 
 .company-address__desc {
   margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .company-address {
+    padding: 0;
+    background-color: #ffffff;
+  }
+
+  .company-address__title {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #111111;
+
+    width: 172px;
+  }
+
+  .company-address__desc {
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: #444444;
+
+    width: 160px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .company-address__title {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #111111;
+  }
+
+  .company-address__desc {
+    text-align: left;
+  }
 }

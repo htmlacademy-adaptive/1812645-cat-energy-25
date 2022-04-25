@@ -2,7 +2,9 @@
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/oswaldregular.woff2") format("woff2");
+  src:
+    url("../fonts/oswaldregular.woff2") format("woff2"),
+    url("../fonts/oswaldregular.woff") format("woff");
   font-display: swap;
 }
 
@@ -10,7 +12,9 @@
   font-family: "Oswald";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/oswaldmedium.woff2") format("woff2");
+  src:
+    url("../fonts/oswaldmedium.woff2") format("woff2"),
+    url("../fonts/oswaldmedium.woff") format("woff");
   font-display: swap;
 }
 
@@ -23,10 +27,22 @@
 
 .main-title {
   font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   text-align: center;
   color: #ffffff;
+}
+
+.main-title-tablet() {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  color: #000000;
+  text-align: left;
 }
 
 .main-title-extra {
@@ -66,6 +82,16 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+  color: #000000;
+}
+
+.secondary-title-tablet() {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: left;
   color: #000000;
 }
 

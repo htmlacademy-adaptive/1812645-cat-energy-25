@@ -1,51 +1,29 @@
-.program {
-  padding: 0 20px 0;
-  margin-bottom: 20px;
-}
-
-.program:last-child {
-  padding: 0 20px 0;
-  margin-bottom: 0;
-}
-
 .program__wrapper {
+  position: relative;
+
   padding: 0 20px;
   background-color: #f2f2f2;
 }
 
-.program__title-box {
-  position: relative;
+.program__wrapper::after {
+    position: absolute;
+    top: 24px;
+    left: 22px;
+    z-index: 1;
 
-  display: grid;
-  grid-template-columns: 50px 170px;
-  grid-template-rows: 50px;
-  column-gap: 20px;
-  align-items: center;
+    content: "";
 
-  padding-top: 21px;
+    width: 50px;
+    height: 50px;
+
+    background-color: #68b738;
+    border-radius: 50%;
 }
 
-.program__title-box::after {
+.program__img-1::before {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-
-  content: "";
-
-  width: 50px;
-  height: 50px;
-
-  background-color: #68b738;
-  border-radius: 50%;
-}
-
-// Позже вынесу в Миксин с параметром
-.program__img-1::after {
-  position: absolute;
-  bottom: 0;
-  left: -10px;
-  transform-origin: top left;
+  top: 21px;
+  left: 15px;
   z-index: 2;
 
   content: "";
@@ -57,10 +35,10 @@
   background-position: center;
 }
 
-.program__img-2::after {
+.program__img-2::before {
   position: absolute;
-  bottom: 0;
-  left: -10px;
+  top: 25px;
+  left: 13px;
   transform-origin: top left;
   z-index: 2;
 
@@ -75,10 +53,11 @@
 
 .program__title {
   margin: 0;
+  padding: 30px 0 29px 71px;
 }
 
 .program__desc {
-  margin: 22px 0 42px;
+  margin: 0 0 38px;
 }
 
 .program__link {
@@ -96,4 +75,171 @@
 
   content: "";
   border-top: 1px solid #d9d9d9;
+}
+
+@media (min-width: @tablet-width) {
+  .program__wrapper {
+    position: relative;
+    padding: 0;
+
+    background-color: #f2f2f2;
+  }
+
+  .program__wrapper::after {
+    position: absolute;
+    top: 92px;
+    left: 446px;
+    z-index: 1;
+
+    content: "";
+
+    width: 200px;
+    height: 200px;
+
+    background-color: #68b738;
+    border-radius: 50%;
+  }
+
+  .program__img-1::before {
+    position: absolute;
+    top: 81px;
+    left: 476px;
+    z-index: 2;
+
+    content: "";
+
+    width: 140px;
+    height: 194px;
+    background-image: url("../img/food-slim.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .program__img-2::before {
+    position: absolute;
+    top: 135px;
+    left: 410px;
+    z-index: 2;
+
+    content: "";
+
+    width: 268px;
+    height: 112px;
+    background-image: url("../img/food-pro.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .program__title {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #000000;
+
+    width: 340px;
+    padding: 77px 0 24px 52px ;
+  }
+
+  .program__desc {
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+
+    width: 340px;
+    margin: 0 0 52px 52px;
+  }
+
+  .program__link {
+    .configuring-link;
+
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #000000;
+
+    position: relative;
+    padding: 0 0 57px 52px;
+  }
+
+  .program__link::before {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program__wrapper {
+    position: relative;
+
+    width: 570px;
+    padding: 0;
+
+    background-color: #f2f2f2;
+  }
+
+  .program__wrapper::after {
+    position: absolute;
+    top: 41px;
+    left: 52px;
+    z-index: 1;
+
+    content: "";
+
+    width: 100px;
+    height: 100px;
+
+    background-color: #68b738;
+    border-radius: 50%;
+  }
+
+  .program__img-1::before {
+    position: absolute;
+    top: 41px;
+    left: 67px;
+    z-index: 2;
+
+    content: "";
+
+    width: 70px;
+    height: 97px;
+    background-image: url("../img/food-slim.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .program__img-2::before {
+    position: absolute;
+    top: 67px;
+    left: 33px;
+    z-index: 2;
+
+    content: "";
+
+    width: 134px;
+    height: 56px;
+    background-image: url("../img/food-pro.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .program__title {
+    padding: 77px 0 73px 214px;
+  }
+
+  .program__desc {
+    width: auto;
+    margin: 0 52px 23px 52px;
+  }
 }
