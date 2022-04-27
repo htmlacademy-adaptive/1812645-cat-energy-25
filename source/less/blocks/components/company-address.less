@@ -3,64 +3,77 @@
   justify-content: space-between;
   align-items: center;
 
+  width: 280px;
+  margin: 0 auto;
+  padding: 26px 20px;
+
   background-color: #ffffff;
+
+  &__title {
+    margin: 0;
+  }
+
+  &__desc {
+    margin: 0;
+  }
 }
 
 .company-address--catalog {
   background-color: #f2f2f2;
 }
 
-.company-address__title {
-  margin: 0;
-}
-
-.company-address__desc {
-  margin: 0;
-}
-
 @media (min-width: @tablet-width) {
   .company-address {
-    padding: 0;
+    width: 708px;
+    padding: 58px 30px;
+
     background-color: #ffffff;
-  }
 
-  .company-address__title {
-    font-family: "Oswald", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: #111111;
+    &__title {
+      font-family: "Oswald", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: #111111;
 
-    width: 172px;
-  }
+      width: 172px;
+    }
 
-  .company-address__desc {
-    font-family: "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: right;
-    color: #444444;
+    &__desc {
+      font-family: "Arial", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: right;
+      color: #444444;
 
-    width: 160px;
+      width: 160px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
-  .company-address__title {
-    font-family: "Oswald", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 26px;
-    text-transform: uppercase;
-    color: #111111;
-  }
+  .company-address {
+    box-sizing: border-box;
+    width: 565px;
+    height: 198px;
+    padding: 56px 80px;
 
-  .company-address__desc {
-    text-align: left;
+    &__title {
+      font-family: "Oswald", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 26px;
+      text-transform: uppercase;
+      color: #111111;
+    }
+
+    &__desc {
+      text-align: left;
+    }
   }
 }
