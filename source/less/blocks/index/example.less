@@ -1,164 +1,147 @@
 .example {
   background-color: #f2f2f2;
-  width: 320px;
-  margin: 0 auto;
 }
 
 .example-content {
+  width: 280px;
+
+  margin: 0 auto;
   padding: 25px 20px 40px;
+
+  &__title {
+    margin: 0 0 28px;
+  }
+
+  &__desc {
+    margin: 0 0 20px;
+  }
 }
 
-.example-content__title {
-  margin: 0 0 28px;
-}
+.description {
+  &__dynamics {
+    display: flex;
+    justify-content: space-between;
 
-.example-content__desc {
-  margin: 0 0 20px;
-}
+    margin-bottom: 20px;
+  }
 
-.example__dynamics {
-  display: flex;
-  justify-content: space-between;
-
-  margin-bottom: 20px;
-}
-
-.example__conclusion {
-  margin: 0;
-  text-align: center;
+  &__conclusion {
+    margin: 0;
+    text-align: center;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .example {
     background-color: #ffffff;
-    width: 768px;
-    margin: 0 auto;
   }
 
   .example-content {
-    position: relative;
-    padding: 0 30px 80px;
+    width: 708px;
+    margin: 0 auto;
+    padding: 0 30px 250px;
+
+    &__title {
+      font-family: "Oswald", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 60px;
+      line-height: 60px;
+      color: #000000;
+
+      margin: 0 0 63px;
+    }
+
+    &__desc {
+      font-family: "Arial", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #444444;
+
+      margin: 0 0 54px;
+    }
   }
 
-  .example-content::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
-
-    content: "";
-    width: 768px;
-    height: 462px;
-    background-color: #eaeaea;
-  }
-
-  .example-content__title {
-    font-family: "Oswald", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 60px;
-    color: #000000;
-
-    margin: 0 0 63px;
-  }
-
-  .example-content__desc {
-    font-family: "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #444444;
-
-    margin: 0 0 54px;
-  }
-
-  .example__wrapper {
+  .description {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    &__dynamics {
+      width: 366px;
+    }
+
+    &__conclusion {
+      font-family: "Oswald", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+      text-align: right;
+      text-transform: uppercase;
+      color: #000000;
+
+      width: 174px;
+    }
   }
 
-  .example__dynamics {
-    width: 366px;
-  }
-
-  .example__conclusion {
-    font-family: "Oswald", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 20px;
-    text-align: right;
-    text-transform: uppercase;
-    color: #000000;
-
-    width: 174px;
-  }
-
-  .example__photos {
-    position: relative;
+  .example-wrapper__photos {
     z-index: 1;
+    height: 462px;
+    background-color: #eaeaea;
   }
 }
 
 @media (min-width: @desktop-width) {
   .example {
-    background-color: #ffffff;
-    width: 1440px;
-    margin: 0 auto;
+    background-color: #f2f2f2;
   }
 
-  .example-content {
+  .example-wrapper {
     position: relative;
     display: flex;
     justify-content: space-between;
 
+    width: 1220px;
+    margin: 0 auto;
     padding: 0 110px 65px;
+
+    &__desc {
+      margin: 70px 0 0;
+    }
   }
 
-  .example-content::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
-
-    content: "";
-    width: 1440px;
-    height: 462px;
-    background-color: #eaeaea;
-  }
-
-  .example-content__wrapper {
+  .example-content {
     width: 436px;
-    z-index: 1;
+    padding: 0;
+
+    &__title {
+      position: absolute;
+      top: -136px;
+      left: 110px;
+
+      margin: 0;
+    }
+
+    &__desc {
+      margin: 0 0 69px;
+    }
   }
 
-  .example-content__title {
-    margin: 0 0 146px;
-  }
-
-  .example-content__desc {
-    margin: 0 0 69px;
-  }
-
-  .example__wrapper {
+  .description {
     display: flex;
     flex-direction: column;
     justify-content: start;
-  }
 
-  .example__dynamics {
-    margin-bottom: 57px;
-  }
+    &__dynamics {
+      margin-bottom: 55px;
+    }
 
-  .example__conclusion {
-    text-align: center;
-    width: 327px;
-  }
-
-  .example__photos {
-    z-index: 3;
+    &__conclusion {
+      text-align: center;
+      width: 327px;
+    }
   }
 }
