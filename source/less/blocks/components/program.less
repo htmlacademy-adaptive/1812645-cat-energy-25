@@ -1,18 +1,17 @@
-.program__wrapper {
+.program {
   position: relative;
 
   padding: 0 20px;
   background-color: #f2f2f2;
 }
 
-.program__wrapper::after {
+.program::after {
   position: absolute;
   top: 24px;
   left: 22px;
   z-index: 1;
 
   content: "";
-
   width: 50px;
   height: 50px;
 
@@ -21,34 +20,11 @@
 }
 
 .program__img-1::before {
-  position: absolute;
-  top: 21px;
-  left: 15px;
-  z-index: 2;
-
-  content: "";
-
-  width: 67px;
-  height: 50px;
-  background-image: url("../img/food-slim.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  .program__img(21px, 15px, 67px, 50px, @img-food-slim);
 }
 
 .program__img-2::before {
-  position: absolute;
-  top: 25px;
-  left: 13px;
-  transform-origin: top left;
-  z-index: 2;
-
-  content: "";
-
-  width: 67px;
-  height: 50px;
-  background-image: url("../img/food-pro.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  .program__img(25px, 13px, 67px, 50px, @img-food-pro);
 }
 
 .program__title {
@@ -78,14 +54,14 @@
 }
 
 @media (min-width: @tablet-width) {
-  .program__wrapper {
+  .program {
     position: relative;
     padding: 0;
 
     background-color: #f2f2f2;
   }
 
-  .program__wrapper::after {
+  .program::after {
     position: absolute;
     top: 92px;
     left: 446px;
@@ -101,44 +77,43 @@
   }
 
   .program__img-1::before {
-    position: absolute;
-    top: 81px;
-    left: 476px;
-    z-index: 2;
+    .program__img(81px, 476px, 140px, 194px, @img-food-slim);
 
-    content: "";
+    //position: absolute;
+    //top: 81px;
+    //left: 476px;
+    //z-index: 2;
+    //
+    //content: "";
 
-    width: 140px;
-    height: 194px;
-    background-image: url("../img/food-slim.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    //width: 140px;
+    //height: 194px;
+    //background-image: url("../img/food-slim.svg");
+    //background-repeat: no-repeat;
+    //background-position: center;
+    //background-size: cover;
   }
 
   .program__img-2::before {
-    position: absolute;
-    top: 135px;
-    left: 410px;
-    z-index: 2;
-
-    content: "";
-
-    width: 268px;
-    height: 112px;
-    background-image: url("../img/food-pro.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    .program__img(135px, 410px, 268px, 122px, @img-food-pro);
+    //position: absolute;
+    //top: 135px;
+    //left: 410px;
+    //z-index: 2;
+    //
+    //content: "";
+    //
+    //width: 268px;
+    //height: 112px;
+    //background-image: url("../img/food-pro.svg");
+    //background-repeat: no-repeat;
+    //background-position: center;
+    //background-size: cover;
   }
 
   .program__title {
-    font-family: "Oswald", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 36px;
-    text-transform: uppercase;
+    .main-title;
+    text-align:left;
     color: #000000;
 
     width: 340px;
@@ -178,16 +153,15 @@
 }
 
 @media (min-width: @desktop-width) {
-  .program__wrapper {
+  .program {
     position: relative;
-
     width: 570px;
     padding: 0;
 
     background-color: #f2f2f2;
   }
 
-  .program__wrapper::after {
+  .program::after {
     position: absolute;
     top: 41px;
     left: 52px;
@@ -203,35 +177,38 @@
   }
 
   .program__img-1::before {
-    position: absolute;
-    top: 41px;
-    left: 67px;
-    z-index: 2;
+    .program__img(41px, 67px, 70px, 97px, @img-food-slim);
 
-    content: "";
-
-    width: 70px;
-    height: 97px;
-    background-image: url("../img/food-slim.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    //position: absolute;
+    //top: 41px;
+    //left: 67px;
+    //z-index: 2;
+    //
+    //content: "";
+    //
+    //width: 70px;
+    //height: 97px;
+    //background-image: url("../img/food-slim.svg");
+    //background-repeat: no-repeat;
+    //background-position: center;
+    //background-size: cover;
   }
 
   .program__img-2::before {
-    position: absolute;
-    top: 67px;
-    left: 33px;
-    z-index: 2;
-
-    content: "";
-
-    width: 134px;
-    height: 56px;
-    background-image: url("../img/food-pro.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    .program__img(67px, 33px, 134px, 56px, @img-food-pro);
+    //position: absolute;
+    //top: 67px;
+    //left: 33px;
+    //z-index: 2;
+    //
+    //content: "";
+    //
+    //width: 134px;
+    //height: 56px;
+    //background-image: url("../img/food-pro.svg");
+    //background-repeat: no-repeat;
+    //background-position: center;
+    //background-size: cover;
   }
 
   .program__title {
