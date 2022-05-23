@@ -16,10 +16,10 @@
   &__desc {
     margin: 0;
   }
-}
 
-.company-address--catalog {
-  background-color: #f2f2f2;
+  &--catalog {
+    background-color: #f2f2f2;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -27,29 +27,14 @@
     width: 708px;
     padding: 58px 30px;
 
-    background-color: #ffffff;
-
     &__title {
-      font-family: "Oswald", sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 20px;
-      text-transform: uppercase;
+      .secondary-title-2024();
       color: #111111;
-
       width: 172px;
     }
 
     &__desc {
-      font-family: "Arial", sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 20px;
-      text-align: right;
-      color: #444444;
-
+      .text-secondary-extra();
       width: 160px;
     }
   }
@@ -62,15 +47,7 @@
     height: 198px;
     padding: 56px 80px;
 
-    &__title {
-      font-family: "Oswald", sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 26px;
-      text-transform: uppercase;
-      color: #111111;
-    }
+    background-color: #ffffff;
 
     &__desc {
       text-align: left;

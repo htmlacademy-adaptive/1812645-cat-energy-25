@@ -2,7 +2,7 @@
   margin: 0;
   background-color: #f2f2f2;
 
-  &__address {
+  &__address:not(.catalog-footer) {
     background-color: #ffffff;
   }
 
@@ -12,22 +12,13 @@
 }
 
 @media (min-width: @tablet-width) {
-  .main-footer {
-    margin: 0;
-    background-color: #f2f2f2;
 
-    &__address {
-      background-color: #ffffff;
-    }
-  }
 }
 
 @media (min-width: @desktop-width) {
   .main-footer {
     position: relative;
     margin: 0;
-
-    background-color: #f2f2f2;
 
     &__address {
       position: absolute;

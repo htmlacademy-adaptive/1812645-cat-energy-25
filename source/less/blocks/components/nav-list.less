@@ -1,56 +1,99 @@
 .nav__list {
-  .configuring-list;
+  .configuring-list();
+
+  display: none;
+  position: absolute;
+  z-index: 3;
+
+  width: 100%;
+  background-color: #ffffff;
+  border-top: 1px solid #e6e6e6;
+}
+
+.nav--show {
+  display: block;
 }
 
 .nav__item {
   position: relative;
-}
 
-.nav__item::after {
-  position: absolute;
-  top: 0;
-  left: -20px;
-  right: -20px;
+  &::before {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 
-  content: "";
-  border-top: 1px solid #e6e6e6;
-}
+    content: "";
+    border-bottom: 1px solid #e6e6e6;
+  }
 
-.nav__item::before {
-  position: absolute;
-  bottom: -1px;
-  left: -20px;
-  right: -20px;
+  .nav__link {
+    .configuring-link();
 
-  content: "";
-  border-bottom: 1px solid #e6e6e6;
-}
-
-.nav__link {
-  .configuring-link;
-
-  padding: 22px 0 24px;
+    width: 280px;
+    margin: 0 auto;
+    padding: 22px 0 24px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .nav__list {
     display: flex;
     flex-direction: row;
+    position: relative;
+
+    width: 100%;
+    border-top: 1px solid transparent;
   }
 
-  .nav__item:not(:last-child) {
-    margin-right: 36px;
-  }
+  .nav__item {
+    &:not(:last-child) {
+      margin-right: 36px;
+    }
 
-  .nav__item::before {
-    display: none;
+    &::before {
+      display: none;
+    }
+
+    &--active {
+      border-bottom: 2px solid #68b738;
+    }
+
+    .nav__link {
+      .secondary-title-2030();
+      .configuring-link();
+      color: #111111;
+
+      width: auto;
+      margin: 0 auto;
+      padding: 8px 0;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
-  .nav__link {
-    .configuring-link;
+  .nav__list {
+    &:not(.nav__list--not-index) {
+      background-color: transparent;
+    }
+  }
 
-    padding: 20px 0 20px;
+  .nav__item {
+    &--active {
+      border-bottom: 2px solid #ffffff;
+    }
+
+    .nav__link {
+      color: #ffffff;
+      padding: 20px 0 10px;
+    }
+  }
+
+  .nav__list--not-index {
+    .nav__item--active {
+      border-bottom: 2px solid #68b738;
+    }
+    .nav__link {
+      color: #111111;
+    }
   }
 }

@@ -1,23 +1,20 @@
 .main-header {
-  width: 280px;
-  margin: 0 auto;
-  padding: 0 20px;
+  margin: 0;
 
-  background-color: #ffffff;
-}
+  &__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-.main-header__logo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+    width: 280px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
 
-.nav--show {
-  display: block;
-}
-
-.nav--hidden {
-  display: none;
+  &__nav {
+    position: relative;
+    z-index: 4;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -28,8 +25,14 @@
     align-items: center;
 
     width: 708px;
-    margin: 30px auto 62px;
+    margin: 30px auto 64px;
     padding: 0 30px;
+
+    &__logo {
+      width: 174px;
+      margin: 0;
+      padding: 0;
+    }
   }
 
   .logo__menu-button {
@@ -39,22 +42,45 @@
 
 @media (min-width: @desktop-width) {
   .main-header {
-    position: relative;
-    z-index: 1;
+    z-index: 2;
+
     width: 1220px;
-    margin: 53px auto 111px;
+    margin: 53px auto 74px;
     padding: 0 110px;
+
+    &__logo {
+      width: 202px;
+      margin: 0;
+      padding: 0;
+    }
   }
 
-  .main-header__nav::before {
-    position: absolute;
-    z-index: 0;
-    top: -53px;
-    right: 0;
+  .main-header__wrapper {
+    // TODO этот код добавляет прокрутку внизу окна
+    //&::before {
+    //  position: absolute;
+    //  z-index: 2;
+    //  top: -53px;
+    //  left: 50%;
+    //
+    //  content: "";
+    //  width: 100%;
+    //  height: 748px;
+    //  background-color: rgba(104, 183, 56, 0.85);
+    //}
 
-    content: "";
-    width: 720px;
-    height: 692px;
-    background-color: #68b738;
+    &::after {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+
+      content: "";
+      width: 720px;
+      height: 694px;
+      background-image: url(@img-licking-cat);
+      background-repeat: no-repeat;
+      object-fit: cover;
+    }
   }
 }

@@ -26,3 +26,41 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+// Миксины для card.less
+.insert-img(s, @top, @left) {
+  width: 68px;
+  height: 86px;
+}
+
+.insert-img(m, @top, @left) {
+  width: 84px;
+  height: 100px;
+}
+
+.insert-img(l, @top, @left) {
+  top: @top;
+  left: @left;
+
+  width: 161px;
+  height: 172px;
+}
+
+.insert-img(xl, @top, @left) {
+  top: @top;
+  left: @left;
+
+  width: 168px;
+  height: 207px;
+}
+
+.insert-img(@_, @top, @left) {
+  position: absolute;
+}
+
+.table-td-tablet() {
+  font-size: 16px;
+
+  padding: 6px 0 8px;
+  border-bottom: 1px solid #cdcdcd;
+}

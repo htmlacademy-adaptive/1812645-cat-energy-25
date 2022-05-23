@@ -10,9 +10,30 @@
     display: block;
     margin: 0 auto 52px;
   }
+}
 
-  &__social {
-    margin: 0 auto 43px;
+.contacts__social {
+  position: relative;
+  margin: 0 auto 43px;
+
+  &::before {
+    position: absolute;
+    top: -20px;
+    left: 0;
+
+    content: "";
+    width: 100%;
+    border-top: 1px solid #d9d9d9;
+  }
+
+  &::after {
+    position: absolute;
+    bottom: -21px;
+    left: 0;
+
+    content: "";
+    width: 100%;
+    border-top: 1px solid #d9d9d9;
   }
 }
 
@@ -28,9 +49,14 @@
     &__logo {
       margin: 0;
     }
+  }
 
-    &__social {
-      margin: 0;
+  .contacts__social {
+    margin: 0;
+
+    &::before,
+    &::after {
+      display: none;
     }
   }
 }

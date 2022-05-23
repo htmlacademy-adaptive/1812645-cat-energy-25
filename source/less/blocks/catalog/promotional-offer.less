@@ -2,32 +2,73 @@
   position: relative;
   width: 280px;
   height: 290px;
+  margin: 0 auto 35px;
 
-  background-image: url("../img/cat-in-case.png");
+  background-image: url(@img-cat-in-case);
   background-repeat: no-repeat;
   background-position: center;
+
+  &::before {
+    position: absolute;
+    top: 59px;
+    right: 101px;
+
+    content: url(@img-icon-basket);
+  }
 }
 
 .promotional-offer__wrapper {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  padding: 187px 59px 0;
+  padding-top: 187px;
 
   background-color: rgba(104, 183, 56, 0.85);
+
+  .promotional-offer__title {
+    text-align: center;
+    width: 161px;
+    margin: 0 auto;
+  }
 }
 
-.promotional-offer__title {
-  text-align: center;
-  width: 161px;
+@media (min-width: @tablet-width) {
+  .promotional-offer {
+    width: 708px;
+    height: 209px;
+    margin: 0 30px 76px;
 
-  margin: 0;
+    &::before {
+      position: absolute;
+      top: 56px;
+      left: 77px;
+    }
+  }
+
+  .promotional-offer__wrapper {
+    padding: 71px 0 0 422px;
+
+    .promotional-offer__title {
+      text-align: left;
+    }
+  }
 }
 
-.promotional-offer::before {
-  position: absolute;
-  top: 59px;
-  right: 101px;
+@media (min-width: @desktop-width) {
+  .promotional-offer {
 
-  content: url("../img/icon-basket.svg");
+    &::before {
+      position: absolute;
+      left: 84px;
+    }
+  }
+
+  .promotional-offer__wrapper {
+    padding: 0;
+
+    .promotional-offer__title {
+      text-align: center;
+      padding-top: 185px;
+    }
+  }
 }
