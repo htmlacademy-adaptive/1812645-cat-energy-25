@@ -10,7 +10,7 @@
   width: 30px;
   height: 30px;
 
-  content: "dg";
+  content: "";
   border: 1px solid #cdcdcd;
   border-radius: 50%;
 
@@ -36,4 +36,30 @@
 
 .radio__desc {
   padding-left: 46px;
+}
+
+@media (min-width: @tablet-width) {
+  .radio__mark {
+    position: absolute;
+    top: -6px;
+    left: 0;
+
+    width: 40px;
+    height: 40px;
+  }
+
+  .radio__input:checked + .radio__mark::before {
+    position: absolute;
+    top: 11px;
+    left: 11px;
+
+    width: 18px;
+    height: 18px;
+  }
+
+  .radio__desc {
+    .secondary-title-2030();
+    color: #222222;
+    padding-left: 60px;
+  }
 }
