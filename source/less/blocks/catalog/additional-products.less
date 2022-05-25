@@ -1,0 +1,90 @@
+.additional-products {
+  position: relative;
+  padding: 25px 0 0;
+
+  // TODO Зеленая линия справа ???
+  //&::before {
+  //  position: absolute;
+  //  top: 41px;
+  //  left: 400px;
+  //
+  //  content: "";
+  //  width: 100%;
+  //  border-top: 2px solid #68b738;
+  //}
+
+  &__title {
+    width: 280px;
+    margin: 0 auto 36px;
+  }
+}
+
+.additional-products__list {
+  .configuring-list();
+
+  width: 280px;
+  margin: 27px auto 35px;
+}
+
+@media (min-width: @tablet-width) {
+  .additional-products {
+    padding: 68px 0 0;
+
+    &__title {
+      .main-title-extra-3636();
+
+      width: 708px;
+      margin: 0 30px;
+    }
+  }
+
+  .additional-products__list {
+    width: 708px;
+    margin: 80px 30px 69px;
+
+    border: 1px solid #cdcdcd;
+
+    .additional-products__item {
+      padding: 26px 38px 28px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-products {
+    padding: 75px 0 0;
+
+    &__title {
+      .main-title-extra-3636();
+
+      margin: 0 110px;
+      text-align: left;
+    }
+  }
+
+  .additional-products__list {
+    width: 896px;
+    margin: 81px 0 86px 110px;
+
+    border: 1px solid transparent;
+
+    .additional-products__item {
+      padding: 15px 0;
+    }
+  }
+
+  .additional-products__wrapper {
+    position: relative;
+    display: flex;
+
+    .additional-products__offer {
+      position: absolute;
+      top: 80px;
+      left: 1055px;
+
+      content: "";
+      width: 245px;
+      height: 288px;
+    }
+  }
+}

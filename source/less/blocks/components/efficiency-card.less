@@ -1,0 +1,122 @@
+.efficiency-card {
+  position: relative;
+  display: flex;
+}
+
+.efficiency-card__img(@_path-to-img) {
+  position: absolute;
+  top: -3px;
+  left: -1px;
+
+  width: 60px;
+  height: 60px;
+
+  content: "";
+  background-image: url(@_path-to-img);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.efficiency-card__img-1::before {
+  .efficiency-card__img(@img-icon-leaf);
+}
+
+.efficiency-card__img-2::before {
+  .efficiency-card__img(@img-icon-tub);
+}
+
+.efficiency-card__img-3::before {
+  .efficiency-card__img(@img-icon-eat);
+}
+
+.efficiency-card__img-4::before {
+  .efficiency-card__img(@img-icon-watch);
+}
+
+.efficiency-card__desc {
+  margin: 0;
+  padding-left: 80px;
+}
+
+@media (min-width: @tablet-width) {
+  .efficiency-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    width: 230px;
+  }
+
+  .efficiency-card__img(@_path-to-img) {
+    position: absolute;
+    top: 40px;
+    left: 0;
+
+    width: 80px;
+    height: 80px;
+
+    content: "";
+    background-image: url(@_path-to-img);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .efficiency-card__number(@_number) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+
+    content: @_number;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+  }
+
+  .efficiency-card__img-1::before {
+    .efficiency-card__img("../../img/icon-leaf.svg");
+  }
+
+  .efficiency-card__img-2::before {
+    .efficiency-card__img("../../img/icon-tub.svg");
+  }
+
+  .efficiency-card__img-3::before {
+    .efficiency-card__img("../../img/icon-eat.svg");
+  }
+
+  .efficiency-card__img-4::before {
+    .efficiency-card__img("../../img/icon-watch.svg");
+  }
+
+  .efficiency-card__img-1::after {
+    .efficiency-card__number("1");
+  }
+
+  .efficiency-card__img-2::after {
+    .efficiency-card__number("2");
+  }
+
+  .efficiency-card__img-3::after {
+    .efficiency-card__number("3");
+  }
+
+  .efficiency-card__img-4::after {
+    .efficiency-card__number("4");
+  }
+
+  .efficiency-card__desc {
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #444444;
+
+    margin: 0;
+    padding: 151px 0 57px;
+  }
+}

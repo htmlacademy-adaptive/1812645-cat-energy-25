@@ -1,0 +1,36 @@
+.main-footer {
+  margin: 0;
+  background-color: #f2f2f2;
+
+  &__address:not(.catalog-footer) {
+    background-color: #ffffff;
+  }
+
+  &__contacts {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-footer {
+    position: relative;
+    margin: 0;
+
+    &__address {
+      position: absolute;
+      top: 95px;
+      left: 110px;
+      z-index: 1;
+    }
+
+    &__map {
+      z-index: 0;
+      height: 400px;
+    }
+
+    &__contacts {
+      width: 1220px;
+      margin: 0 110px;
+    }
+  }
+}

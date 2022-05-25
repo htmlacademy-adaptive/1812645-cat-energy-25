@@ -1,0 +1,43 @@
+.checked {
+  position: relative;
+
+  &__desc {
+    padding-left: 46px;
+  }
+}
+
+.checked-mark {
+  position: absolute;
+  top: -7px;
+  left: 0;
+  border: 1px solid #cdcdcd;
+
+  content: "";
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.checked__input:checked + .checked-mark::before {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+
+  content: url(@img-tick);
+  width: 30px;
+  height: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .checked {
+    &__desc {
+      .secondary-title-2030();
+      color: #000000;
+    }
+  }
+
+  .checked-mark {
+    position: absolute;
+    top: -1px;
+  }
+}

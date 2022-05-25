@@ -1,0 +1,142 @@
+.program-selection {
+  position: relative;
+
+  height: 302px;
+  margin-bottom: 198px;
+
+  background-color: rgba(104, 183, 56, 0.85);
+
+  &__title {
+    margin: 0 0 25px;
+  }
+
+  &__desc {
+    margin: 0 auto 29px;
+  }
+
+  &__img {
+    position: relative;
+    display: block;
+    z-index: 3;
+
+    margin: auto;
+  }
+}
+
+.program-selection__inner {
+  width: 280px;
+  margin: 0 auto;
+  padding: 27px 20px 0;
+}
+
+.program-selection__button {
+  position: absolute;
+  bottom: -166px;
+  left: 0;
+  right: 0;
+
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .program-selection {
+    height: 810px;
+    margin-bottom: 0;
+
+    background-color: #ffffff;
+  }
+
+  .program-selection__inner {
+    position: relative;
+
+    width: 708px;
+    margin: 0 auto;
+    padding: 0 30px 0;
+
+    .program-selection__img {
+      position: absolute;
+      bottom: -629px;
+      z-index: 0;
+
+      width: 708px;
+      height: 609px;
+    }
+  }
+
+  .program-selection__wrapper {
+    position: relative;
+
+    width: 418px;
+    margin-left: 90px;
+
+    .program-selection__title {
+      .main-title-tablet();
+      margin-bottom: 41px;
+    }
+
+    .program-selection__desc {
+      .secondary-title-2020();
+      margin-bottom: 49px;
+    }
+
+    .program-selection__button {
+      .main-button-tablet();
+      position: absolute;
+      bottom: -97px;
+      left: 0;
+      z-index: 1;
+
+      width: 244px;
+      height: 54px;
+      margin-left: 0;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program-selection {
+    height: auto;
+    background-color: #ffffff;
+  }
+
+  .program-selection__inner {
+    position: relative;
+    display: flex;
+
+    width: 1220px;
+    margin: 0 auto 82px;
+    padding: 0 110px;
+
+    .program-selection__img {
+      position: absolute;
+      z-index: 2;
+      bottom: 82px;
+      right: 330px;
+
+      width: 552px;
+      height: 449px;
+    }
+  }
+
+  .program-selection__wrapper {
+    width: 418px;
+    margin: 0;
+
+    .program-selection__title {
+      .main-title-tablet;
+      margin-bottom: 40px;
+    }
+
+    .program-selection__desc {
+      .secondary-title-2024();
+      margin-bottom: 291px;
+    }
+
+    .program-selection__button {
+      position: absolute;
+      bottom: 185px;
+      left: 0;
+    }
+  }
+}

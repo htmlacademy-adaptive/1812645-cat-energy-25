@@ -1,0 +1,66 @@
+.configuring-list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.configuring-link() {
+  display: block;
+  text-decoration: none;
+}
+
+.configuring-img() {
+  display: block;
+}
+
+.program__img(@_top, @_left, @_width, @_height, @_path-to-img) {
+  position: absolute;
+  top: @_top;
+  left: @_left;
+  z-index: 2;
+
+  content: "";
+  width: @_width;
+  height: @_height;
+  background-image: url(@_path-to-img);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+// Миксины для card.less
+.insert-img(s, @top, @left) {
+  width: 68px;
+  height: 86px;
+}
+
+.insert-img(m, @top, @left) {
+  width: 84px;
+  height: 100px;
+}
+
+.insert-img(l, @top, @left) {
+  top: @top;
+  left: @left;
+
+  width: 161px;
+  height: 172px;
+}
+
+.insert-img(xl, @top, @left) {
+  top: @top;
+  left: @left;
+
+  width: 168px;
+  height: 207px;
+}
+
+.insert-img(@_, @top, @left) {
+  position: absolute;
+}
+
+.table-td-tablet() {
+  font-size: 16px;
+
+  padding: 6px 0 8px;
+  border-bottom: 1px solid #cdcdcd;
+}

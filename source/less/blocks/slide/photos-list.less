@@ -1,0 +1,29 @@
+.photos__list {
+  .configuring-list;
+}
+
+.photos__img {
+  display: block;
+  margin: 0 auto;
+}
+
+.photos__item {
+  &--disabled {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photos__list {
+    position: absolute;
+    top: -176px;
+  }
+
+  .photos__img {
+    width: 592px;
+    height: 511px;
+
+    object-fit: fill;
+    background-repeat: no-repeat;
+  }
+}

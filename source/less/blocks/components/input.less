@@ -1,0 +1,37 @@
+.input {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 13px;
+  align-items: center;
+}
+
+.input__label {
+  margin: 0;
+  padding: 0;
+}
+
+.input__data {
+  padding: 13px 0 13px 14px;
+  border: 1px solid #e7e7e7;
+}
+
+@media (min-width: @tablet-width) {
+  .input__label {
+    .secondary-title-2030();
+    color: #444444;
+  }
+
+  .input__data {
+    .secondary-title-2030();
+    color: #444444;
+
+    padding: 10px 0 10px 21px;
+    border: 1px solid #e7e7e7;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .input {
+    width: 569px;
+  }
+}
