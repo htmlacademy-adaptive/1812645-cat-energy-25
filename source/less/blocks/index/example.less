@@ -32,8 +32,10 @@
 }
 
 .example-wrapper__photos {
-  width: 320px;
-  margin: 0 auto;
+  .photos__container {
+    width: 320px;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -76,6 +78,7 @@
 
     &__dynamics {
       width: 366px;
+      margin-bottom: 0;
     }
 
     &__conclusion {
@@ -87,9 +90,16 @@
   }
 
   .example-wrapper__photos {
-    z-index: 1;
-    height: 462px;
     background-color: #eaeaea;
+
+    .photos__container {
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+
+      width: 592px;
+      height: 462px;
+    }
   }
 }
 
@@ -143,5 +153,9 @@
       text-align: left;
       width: 436px;
     }
+  }
+
+  .example-wrapper__photos {
+    background-color: transparent;
   }
 }
