@@ -1,3 +1,53 @@
 .slide-switch {
-  margin: 0;
+  position: relative;
+
+  &__desc {
+    display: flex;
+    justify-content: space-between;
+
+    width: 210px;
+    margin: 0 auto;
+  }
+
+  .slide-switch__mark {
+    position: absolute;
+    top: 2px;
+    left: 115px;
+
+    width: 85px;
+    height: 13px;
+
+    content: "";
+    border: 1px solid #cdcdcd;
+    border-radius: 6px;
+    background-color: #ffffff;
+
+    cursor: pointer;
+  }
+}
+
+.slide-switch__mark::before {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+
+  width: 36px;
+  height: 7px;
+
+  content: "";
+  border-radius: 6px;
+  background-color: #68b738;
+}
+
+.slide-switch__mark::after {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+
+  width: 36px;
+  height: 7px;
+
+  content: "";
+  border-radius: 6px;
+  background-color: #68b738;
 }
