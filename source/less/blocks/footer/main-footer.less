@@ -13,13 +13,19 @@
 
 @media (min-width: @desktop-width) {
   .main-footer {
-    position: relative;
-    margin: 0;
+    background-color: #f2f2f2;
+
+    &__container {
+      position: relative;
+
+      width: 1220px;
+      margin: 0 auto;
+    }
 
     &__address {
       position: absolute;
       top: 95px;
-      left: 110px;
+      left: 0;
       z-index: 1;
     }
 
@@ -28,9 +34,14 @@
       height: 400px;
     }
 
+    &__wrapper {
+      width: 1220px;
+      margin: 0 auto;
+    }
+
     &__contacts {
       width: 1220px;
-      margin: 0 110px;
+      margin: 0 auto;
     }
   }
 }
