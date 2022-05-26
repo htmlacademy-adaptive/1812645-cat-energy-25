@@ -1,7 +1,7 @@
 .main-header {
   margin: 0;
 
-  &__logo {
+  .main-header__logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,10 +11,62 @@
     padding: 0 20px;
   }
 
-  &__nav {
-    position: relative;
+  .main-header__nav {
     z-index: 4;
   }
+}
+
+.main-header__button {
+  position: relative;
+  width: 24px;
+  height: 16px;
+
+  cursor: pointer;
+  border: none;
+  background-color: #ffffff;
+}
+
+.main-header--nojs .main-header__button {
+  display: none;
+}
+
+.main-header--nojs .nav__list {
+  position: static;
+}
+
+.main-header--closed .nav__list {
+  display: none;
+}
+
+.main-header--opened .nav__list {
+  display: block;
+}
+
+.main-header--closed .main-header__button::before {
+  .header-button(0, 0);
+
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+}
+
+.main-header--closed .main-header__button:active::before {
+  background-color: fade(#000000, 30%);
+  box-shadow:
+    0 8px 0 0 fade(#000000, 30%),
+    0 16px 0 0 fade(#000000, 30%);
+}
+
+.main-header--opened .main-header__button::before {
+  .header-button(7px, 0);
+
+  transform: rotate(45deg);
+  box-shadow: none;
+}
+
+.main-header--opened .main-header__button::after {
+  .header-button(7px, 0);
+
+  transform: rotate(-45deg);
+  box-shadow: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -28,14 +80,20 @@
     margin: 30px auto 64px;
     padding: 0 30px;
 
-    &__logo {
+    .main-header__logo {
       width: 174px;
       margin: 0;
       padding: 0;
     }
   }
 
-  .logo__menu-button {
+  .main-header--nojs .nav__list,
+  .main-header--closed .nav__list,
+  .main-header--opened .nav__list {
+    display: flex;
+  }
+
+  .main-header__button {
     display: none;
   }
 }
@@ -45,47 +103,13 @@
     z-index: 2;
 
     width: 1220px;
-    margin: 53px auto 74px;
+    margin: 30px auto 112px;
     padding: 0;
 
-    &__logo {
+    .main-header__logo {
       width: 202px;
       margin: 0;
       padding: 0;
-    }
-  }
-
-  .main-header__wrapper {
-    position: relative;
-
-    &::before {
-      position: absolute;
-      z-index: 2;
-      top: -53px;
-      right: 0;
-
-      content: "";
-      width: 50%;
-      height: 715px;
-
-      background-color: rgba(104, 183, 56, 0.85);
-      background-position: right;
-    }
-
-    &::after {
-      position: absolute;
-      z-index: 1;
-      top: 0;
-      right: 0;
-
-      content: "";
-      width: 50%;
-      height: 655px;
-      background-image: url(@img-licking-cat);
-      background-color: #305b13;
-      background-repeat: no-repeat;
-      background-position: right;
-      object-fit: cover;
     }
   }
 }

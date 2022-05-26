@@ -1,0 +1,36 @@
+@media (min-width: @desktop-width) {
+  .header-decor {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      z-index: 2;
+      top: -53px;
+      right: 0;
+
+      content: "";
+      width: 50%;
+      height: 715px;
+
+      background-color: rgba(104, 183, 56, 0.85);
+      background-position: right;
+    }
+
+    &::after {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+
+      content: "";
+      width: 50%;
+      height: 655px;
+      background-image: url(@img-licking-cat);
+      background-color: #305b13;
+      background-repeat: no-repeat;
+      background-position: right;
+      object-fit: cover;
+    }
+  }
+}
+
