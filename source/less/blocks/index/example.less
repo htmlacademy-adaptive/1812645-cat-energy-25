@@ -2,37 +2,15 @@
   background-color: #f2f2f2;
 }
 
-.example-content {
+.example__container {
   width: 280px;
 
   margin: 0 auto;
   padding: 25px 20px 40px;
-
-  &__title {
-    margin: 0 0 28px;
-  }
-
-  &__desc {
-    margin: 0 0 20px;
-  }
 }
 
-.description {
-  &__dynamics {
-    display: flex;
-    justify-content: space-between;
-
-    margin-bottom: 34px;
-  }
-
-  &__conclusion {
-    margin: 0;
-    text-align: center;
-  }
-}
-
-.example-wrapper__photos {
-  .photos__container {
+.example__photos {
+  .example__photos-container {
     width: 320px;
     margin: 0 auto;
   }
@@ -43,56 +21,10 @@
     background-color: #ffffff;
   }
 
-  .example-content {
-    width: 708px;
-    margin: 0 auto;
-    padding: 0 30px 250px;
-
-    &__title {
-      font-family: "Oswald", sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 60px;
-      line-height: 60px;
-      color: #000000;
-
-      margin: 0 0 63px;
-    }
-
-    &__desc {
-      font-family: "Arial", sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 24px;
-      color: #444444;
-
-      margin: 0 0 54px;
-    }
-  }
-
-  .description {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    &__dynamics {
-      width: 366px;
-      margin-bottom: 0;
-    }
-
-    &__conclusion {
-      .secondary-title-2020();
-
-      text-align: right;
-      width: 174px;
-    }
-  }
-
-  .example-wrapper__photos {
+  .example__photos {
     background-color: #eaeaea;
 
-    .photos__container {
+    .example__photos-container {
       position: relative;
       display: flex;
       align-items: flex-end;
@@ -108,54 +40,13 @@
     background-color: #f2f2f2;
   }
 
-  .example-wrapper {
+  .example__wrapper {
     position: relative;
     display: flex;
     justify-content: space-between;
 
     width: 1220px;
     margin: 0 auto;
-    padding: 0 110px 65px;
-
-    &__desc {
-      margin: 70px 0 0;
-    }
-  }
-
-  .example-content {
-    width: 436px;
-    padding: 0;
-
-    &__title {
-      position: absolute;
-      top: -136px;
-      left: 110px;
-
-      margin: 0;
-    }
-
-    &__desc {
-      margin: 0 0 69px;
-    }
-  }
-
-  .description {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-
-    &__dynamics {
-      width: 436px;
-      margin-bottom: 55px;
-    }
-
-    &__conclusion {
-      text-align: left;
-      width: 436px;
-    }
-  }
-
-  .example-wrapper__photos {
-    background-color: transparent;
+    padding: 0 110px;
   }
 }

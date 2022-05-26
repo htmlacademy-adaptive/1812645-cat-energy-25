@@ -1,7 +1,8 @@
 .slide-switch {
   position: relative;
+  padding-bottom: 43px;
 
-  &__desc {
+  .slide-switch__desc {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,7 +11,7 @@
     margin: 0 auto;
   }
 
-  &__control {
+  .slide-switch__control {
     cursor: pointer;
   }
 }
@@ -18,7 +19,7 @@
 .slide-switch__mark {
   position: absolute;
   top: 2px;
-  left: 115px;
+  left: 117px;
 
   width: 85px;
   height: 13px;
@@ -60,14 +61,16 @@
 @media (min-width: @tablet-width) {
   .slide-switch {
     position: relative;
-    margin-bottom: 59px;
 
-    &__desc {
-      width: 592px;
+    padding-bottom: 59px;
+    margin: 0 auto;
+
+    .slide-switch__desc {
+      width: 572px;
       height: 34px;
     }
 
-    &__title {
+    .slide-switch__title {
       .secondary-title-2030();
       color: #000000;
     }
@@ -78,22 +81,20 @@
     top: 14px;
     left: 83px;
 
+    content: "";
     width: 426px;
     height: 6px;
-
-    content: "";
     border: 1px solid transparent;
     background-color: #dcdcdc;
 
     &::before {
       position: absolute;
-      top: -16px;
-      left: 196px;
-
-      width: 34px;
-      height: 34px;
+      top: -15px;
+      left: 186px;
 
       content: "";
+      width: 34px;
+      height: 34px;
       border-radius: 50%;
       border: 1px solid #cdcdcd;
       background-color: #ffffff;
@@ -102,12 +103,11 @@
     &::after {
       position: absolute;
       top: -2px;
-      left: 210px;
-
-      width: 8px;
-      height: 8px;
+      left: 200px;
 
       content: "";
+      width: 8px;
+      height: 8px;
       border-radius: 50%;
       border: none;
       background-color: #68b738;
