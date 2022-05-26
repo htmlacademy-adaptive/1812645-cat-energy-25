@@ -8,20 +8,20 @@
   </head>
 
   <body  class="page__body">
-    <div class="main-header">
-      <div class="main-header__logo logo">
-        <a class="logo__link" href="index.html">
+
+    <div class="main-header main-header--closed main-header--nojs">
+      <div class="main-header__logo">
+        <a class="main-header__link" href="index.html">
           <img src="img/logo-mobile.svg" alt="Логотип сайта." width="34" height="38">
         </a>
         <img src="img/logo-desc.svg" alt="Название сайта." width="101" height="18">
 
-        <button class="logo__menu-button open-menu" type="button">
-          <img src="img/menu-button.svg" alt="Открыть меню." width="24" height="18">
+        <button class="main-header__button" type="button">
+          <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
 
-      <!--  Поповер  -->
-      <div class="main-header__nav">
+      <div class="main-header__nav nav">
         <ul class="nav__list nav__list--not-index">
           <li class="nav__item">
             <a class="nav__link secondary-title" href="index.html" rel="nofollow noopener">
@@ -363,6 +363,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/nav-show.js"></script>
+    <script src="js/catalog.js"  type="module"></script>
   </body>
 </html>
