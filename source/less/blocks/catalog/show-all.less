@@ -93,16 +93,29 @@
       text-align: center;
 
       width: 167px;
-      margin: 0 auto 87px;
+      margin: 0 auto 80px;
     }
   }
 }
 
 @media (min-width: @desktop-width) {
   .show-all {
+    width: 245px;
+
     .show-all__img {
       top: 52px;
       left: 92px;
+    }
+  }
+
+  .show-all__container {
+    &::after,
+    &::before {
+      position: absolute;
+      top: -80px;
+      left: 54px;
+
+      width: 60px;
     }
   }
 }
