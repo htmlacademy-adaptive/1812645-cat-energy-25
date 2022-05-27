@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Каталог</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
 
   <body  class="page__body">
@@ -261,10 +262,9 @@
           <h2 class="additional-products__title primary-title-over">Дополнительные товары</h2>
 
           <div class="additional-products__wrapper">
-
             <ul class="additional-products__list">
               <li class="additional-products__item product">
-                <div class="description-container">
+                <div class="product__container">
                   <h3 class="product__title additional-title-extra">Сахарозаменитель</h3>
                   <dl class="product__desc">
                     <dt class="product__parameter text-primary">1 упаковка (100 г)</dt>
@@ -275,7 +275,7 @@
               </li>
 
               <li class="additional-products__item product">
-                <div class="description-container">
+                <div class="product__container">
                   <h3 class="product__title additional-title-extra">Питьевая вода</h3>
                     <dl class="product__desc">
                       <dt class="product__parameter text-primary">5 литров</dt>
@@ -286,7 +286,7 @@
               </li>
 
               <li class="additional-products__item product">
-                <div class="description-container">
+                <div class="product__container">
                   <h3 class="product__title additional-title-extra">Молоко</h3>
                   <dl class="product__desc">
                     <dt class="product__parameter text-primary">1 литр</dt>
@@ -297,7 +297,7 @@
               </li>
 
               <li class="additional-products__item product">
-                <div class="description-container">
+                <div class="product__container">
                   <h3 class="product__title additional-title-extra">Витамины</h3>
                   <dl class="product__desc">
                     <dt class="product__parameter text-primary">1 упаковка (30 г)</dt>
@@ -323,10 +323,12 @@
     <footer class="main-footer">
       <h2 class="visually-hidden">Подвал сайта</h2>
 
-      <div class="main-footer__address catalog-footer">
-        <div class="company-address company-address--catalog">
-          <h3 class="company-address__title additional-title">Приглашаем к сотрудничеству дилеров!</h3>
-          <p class="company-address__desc text-extra">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="main-footer__container">
+        <div class="main-footer__address catalog-footer">
+          <div class="company-address company-address--catalog">
+            <h3 class="company-address__title additional-title">Приглашаем к сотрудничеству дилеров!</h3>
+            <p class="company-address__desc text-extra">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          </div>
         </div>
       </div>
 
