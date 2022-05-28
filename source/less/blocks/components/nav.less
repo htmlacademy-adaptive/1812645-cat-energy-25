@@ -39,7 +39,8 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 
     width: 100%;
     border-top: 1px solid transparent;
@@ -72,6 +73,8 @@
 
 @media (min-width: @desktop-width) {
   .nav__list {
+    max-width: 600px;
+
     &:not(.nav__list--not-index) {
       background-color: transparent;
     }

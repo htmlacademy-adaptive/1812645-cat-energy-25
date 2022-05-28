@@ -138,8 +138,10 @@
 @media (min-width: @desktop-width) {
   .program {
     position: relative;
+    box-sizing: border-box;
+
     width: 570px;
-    padding: 0;
+    padding: 52px;
 
     background-color: #f2f2f2;
   }
@@ -168,17 +170,22 @@
   }
 
   .program__title {
-    padding: 77px 0 73px 214px;
+    width: 304px;
+    padding: 25px 0 73px 162px;
   }
 
   .program__desc {
     width: auto;
-    margin: 0 52px 24px 51px;
+    margin: 0 0 27px 0;
+  }
+
+  .program__link {
+    padding: 0 0 8px;
   }
 
   .program__link::after {
     position: absolute;
-    bottom: 64px;
-    left: 188px;
+    bottom: 19px;
+    left: 135px;
   }
 }
