@@ -1,7 +1,7 @@
 .checked {
   position: relative;
 
-  &__desc {
+  .checked__desc {
     padding-left: 46px;
   }
 }
@@ -30,14 +30,24 @@
 
 @media (min-width: @tablet-width) {
   .checked {
-    &__desc {
+    .checked__desc {
       .secondary-title-2030();
       color: #000000;
+
+      padding-left: 59px;
     }
   }
 
   .checked-mark {
     position: absolute;
-    top: -1px;
+    top: -5px;
+
+    width: 40px;
+    height: 40px;
+  }
+
+  .checked__input:checked + .checked-mark::before {
+    width: 40px;
+    height: 40px;
   }
 }

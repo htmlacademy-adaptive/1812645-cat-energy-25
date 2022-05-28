@@ -83,3 +83,24 @@
   height: 1.5px;
   background-color: #000000;
 }
+
+// Миксины для form.less
+.line-right(@top, @width) {
+  position: absolute;
+  top: @top;
+  right: 0;
+  width: @width;
+
+  content: "";
+  border-top: 2px solid #68b738;
+}
+
+.line-left(@top, @width) {
+  position: absolute;
+  top: @top;
+  left: 0;
+  width: @width;
+
+  content: "";
+  border-top: 2px solid #68b738;
+}

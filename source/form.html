@@ -44,7 +44,7 @@
     <main class="main-container data">
       <div class="data__wrapper">
         <h1 class="data__title main-title">Подбор программы</h1>
-        <p class="data__desc special-title">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <p class="data__desc special-title">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
       </div>
 
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
@@ -68,9 +68,9 @@
           </section>
 
           <section class="form__goal-wrapper">
-            <div class="data-entry__goal goal">
+            <div class="goal">
               <h2 class="visually-hidden">Форма выбора программы</h2>
-              <div class="goal__input radio">
+              <div class="goal__radio radio">
                 <label for="weight-loss">
                   <input class="visually-hidden radio__input" type="radio" name="target" value="weight-loss" id="weight-loss" checked>
                   <span class="radio__mark"></span>
@@ -78,7 +78,7 @@
                 </label>
               </div>
 
-              <div class="goal__input radio">
+              <div class="goal__radio radio">
                 <label for="weight-gain">
                   <input class="visually-hidden radio__input" type="radio" name="target" value="weight-gain" id="weight-gain">
                   <span class="radio__mark"></span>
@@ -86,9 +86,9 @@
                 </label>
               </div>
 
-              <div class="goal__input radio">
-                <label for="unknown">
-                  <input class="visually-hidden radio__input" type="radio" name="target" value="unknown" id="unknown" checked>
+              <div class="goal__radio radio">
+                <label class="radio__disabled" for="unknown">
+                  <input class="visually-hidden radio__input" type="radio" name="target" value="unknown" id="unknown" checked disabled>
                   <span class="radio__mark"></span>
                   <span class="radio__desc additional-title-over">Не знаю (Нужен ваш совет)</span>
                 </label>
@@ -97,35 +97,35 @@
           </section>
         </div>
 
-        <section class="form__client">
+        <section class="form__client client">
           <div class="client__wrapper">
             <h2 class="client__title primary-title-over">Контактные данные (владельца кота)</h2>
-          </div>
 
-          <div class="data-entry__client client cat">
-            <div class="cat__input input">
-              <label class="input__label additional-title-over" for="email">E-mail:*</label>
-              <input class="input__data additional-title-over" id="email" type="text" name="email" placeholder="kuklachev@gmail.com">
-            </div>
+            <div class="client__data">
+              <div class="client__input input">
+                <label class="input__label additional-title-over" for="email">E-mail:*</label>
+                <input class="input__data additional-title-over" id="email" type="text" name="email" placeholder="kuklachev@gmail.com">
+              </div>
 
-            <div class="cat__input input">
-              <label class="input__label additional-title-over" for="phone">Телефон:*</label>
-              <input class="input__data additional-title-over" id="phone" type="text" name="phone" placeholder="8 (960) 900-60-90">
+              <div class="client__input input">
+                <label class="input__label additional-title-over" for="phone">Телефон:*</label>
+                <input class="input__data additional-title-over" id="phone" type="text" name="phone" placeholder="8 (960) 900-60-90">
+              </div>
             </div>
           </div>
         </section>
 
         <section class="form__comment">
-          <div class="data-entry__comment comment">
+          <div class="comment">
             <h2 class="comment__title primary-title-over">Комментарий</h2>
             <label class="visually-hidden" for="comment">Форма для ввода комментария.</label>
             <textarea class="comment__input additional-title-over" id="comment" name="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </section>
 
-        <section class="form__additionally">
+        <section class="form__additionally additionally">
           <h2 class="additionally__title primary-title-over">Дополнительно</h2>
-          <div class="data-entry__additionally additionally">
+          <div class="additionally__data">
             <label class="additionally__checked checked">
               <input class="visually-hidden checked__input" type="checkbox" name="sweetener" value="sweetener" checked>
               <span class="checked-mark"></span>
