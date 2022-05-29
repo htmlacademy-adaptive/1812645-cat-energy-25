@@ -65,7 +65,14 @@
             <p class="program-selection__desc special-title-extra">Занялся собой? Займись котом!</p>
             <a class="program-selection__link" href="form.html">Подобрать программу</a>
           </div>
-          <img class="program-selection__img" src="img/foot-energy.svg" alt="Корм Cat Energy." width="280" height="270">
+          <picture>
+            <source media="(min-width: 1340px)"
+                    srcset="img/index-desktop.png 1x, img/index-desktop@2x.png 2x">
+            <source media="(min-width: 768px)"
+                    srcset="img/index-tablet.png 1x, img/index-tablet@2x.png 2x">
+            <img class="program-selection__img"  alt="Корм Cat Energy." width="280" height="270"
+                 src="img/index-mobile.png" srcset="img/index-mobile@2x.png">
+          </picture>
         </div>
       </section>
 
