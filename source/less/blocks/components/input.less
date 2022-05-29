@@ -1,8 +1,36 @@
 .input {
+  position: relative;
+
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 13px;
   align-items: center;
+}
+
+.input.error .input__data {
+  outline: 2px solid red;
+}
+
+.input.client__input:first-child::before {
+  position: absolute;
+  top: 19px;
+  right: 20px;
+
+  content: "";
+  width: 18px;
+  height: 13px;
+  background-image: url(@img-icon-envelope);
+}
+
+.input.client__input:last-child::before {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url(@img-icon-phone);
 }
 
 .input__label {

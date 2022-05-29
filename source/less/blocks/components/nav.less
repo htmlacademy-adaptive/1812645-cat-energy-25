@@ -12,10 +12,6 @@
 .nav__item {
   position: relative;
 
-  &:hover {
-    background-color: #f2f2f2;
-  }
-
   &::before {
     position: absolute;
     bottom: 0;
@@ -24,14 +20,18 @@
     content: "";
     border-bottom: 1px solid #e6e6e6;
   }
+}
 
-  .nav__link {
-    .configuring-link();
+.nav__link {
+  .configuring-link();
 
-    width: 280px;
-    margin: 0 auto;
-    padding: 22px 0 24px;
-  }
+  width: 280px;
+  margin: 0 auto;
+  padding: 22px 0 24px;
+}
+
+.nav__link:hover {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 @media (min-width: @tablet-width) {
@@ -69,6 +69,10 @@
       padding: 8px 0;
     }
   }
+
+  .nav__link:hover {
+    color: rgba(0, 0, 0, 0.5);
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -89,6 +93,10 @@
       color: #ffffff;
       padding: 20px 0 10px;
     }
+
+    .nav__link:hover {
+      color: rgba(255, 255, 255, 0.5);
+    }
   }
 
   .nav__list--not-index {
@@ -98,6 +106,10 @@
 
     .nav__link {
       color: #111111;
+    }
+
+    .nav__link:hover {
+      color: rgba(17, 17, 17, 0.5);
     }
   }
 }
