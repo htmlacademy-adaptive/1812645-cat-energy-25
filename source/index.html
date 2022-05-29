@@ -154,10 +154,20 @@
               <h2 class="visually-hidden">Фотографии кота до и после приёма корма Energy.</h2>
               <ul class="photos__list slider__list">
                 <li class="photos__item-1 slider__item disabled">
-                  <img class="photos__img" src="img/fat-cat.png" width="280" height="232" alt="Толстый кот.">
+                  <picture>
+                    <source media="(min-width: 768px)"
+                            srcset="img/fat-thin-cats-tablet.png 1x, img/fat-thin-cats-tablet@2x.png 2x">
+                    <img class="photos__img" width="280" height="232" alt="Толстый кот."
+                          src="img/fat-cat-mobile.png" srcset="img/fat-cat-mobile@2x.png">
+                  </picture>
                 </li>
                 <li class="photos__item-2 slider__item">
-                  <img class="photos__img" src="img/thin-cat.png" width="243" height="232" alt="Худой кот.">
+                  <picture>
+                    <source media="(min-width: 768px)"
+                            srcset="img/fat-thin-cats-tablet.png 1x, img/fat-thin-cats-tablet@2x.png 2x">
+                    <img class="photos__img"  width="243" height="232" alt="Худой кот."
+                          src="img/thin-cat-mobile.png" srcset="img/thin-cat-mobile@2x.png">
+                  </picture>
                 </li>
               </ul>
               <div class="slide-switch">
