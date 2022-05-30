@@ -2,7 +2,7 @@
   position: relative;
 
   width: 124px;
-  height: 70px;
+  height: 55px;
 
   border: 1px solid #cdcdcd;
   border-radius: 3px;
@@ -22,6 +22,11 @@
   background: #f2f2f2;
 }
 
+.effectiveness__title,
+.effectiveness__text {
+  display: block;
+}
+
 @media (min-width: @tablet-width) {
   .effectiveness {
     width: 160px;
@@ -32,7 +37,7 @@
 
   .effectiveness__wrapper {
     position: absolute;
-    top: 26px;
+    top: 16px;
     left: 15px;
 
     width: 132px;
@@ -41,13 +46,19 @@
     background: #ffffff;
   }
 
+  .effectiveness__wrapper br{
+    display: none;
+  }
+
   .effectiveness__title {
     .main-title-extra-3037();
+    margin-bottom: 12px;
   }
 
   .effectiveness__text {
     .text-primary();
     color: #444444;
+    background-color: #ffffff;
   }
 }
 
