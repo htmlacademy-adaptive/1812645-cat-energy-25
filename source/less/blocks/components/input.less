@@ -8,7 +8,11 @@
 }
 
 .input.error .input__data {
-  outline: 2px solid #ff8282;
+  border: 1px solid #ff8282;
+}
+
+.input.error .input__data:hover {
+  border: 1px solid #c82424;
 }
 
 .input.client__input:first-child::before {
@@ -41,6 +45,10 @@
 .input__data {
   padding: 13px 0 13px 14px;
   border: 1px solid #e7e7e7;
+}
+
+.input__data:hover {
+  border: 1px solid #878787;
 }
 
 @media (min-width: @tablet-width) {

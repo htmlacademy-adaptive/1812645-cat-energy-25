@@ -18,15 +18,11 @@
 }
 
 .radio__input:hover + .radio__mark {
-  border: 1px solid #bababa;
+  border: 1px solid #878787;
 }
 
 .radio__input:disabled + .radio__mark {
   border: 1px solid rgba(186, 186, 186, 0.3);
-}
-
-.radio__disabled + .radio__input + .radio__mark::before {
-  background-color: rgba(196, 27, 83, 0.3);
 }
 
 .radio__input:checked + .radio__mark::before {
@@ -40,6 +36,10 @@
   content: "";
   background-color: #68b738;
   border-radius: 50%;
+}
+
+.radio__input:checked:disabled + .radio__mark::before {
+  background-color: rgba(104, 183, 56, 0.3);
 }
 
 .radio__desc {

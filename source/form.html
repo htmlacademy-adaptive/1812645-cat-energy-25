@@ -62,7 +62,7 @@
           <section class="form__input-data data-entry">
             <div class="data-entry__cat cat">
               <h2 class="visually-hidden">Форма ввода данных о коте</h2>
-              <div class="cat__input input">
+              <div class="cat__input input error">
                 <label class="input__label additional-title-over" for="cat-name">ИМЯ:*</label>
                 <input class="input__data additional-title-over" id="cat-name" type="text" name="cat-name" placeholder="Барсик">
               </div>
@@ -97,7 +97,7 @@
               </div>
 
               <div class="goal__radio radio">
-                <label class="radio__disabled" for="unknown">
+                <label for="unknown">
                   <input class="visually-hidden radio__input" type="radio" name="target" value="unknown" id="unknown" checked disabled>
                   <span class="radio__mark"></span>
                   <span class="radio__desc additional-title-over">Не знаю (Нужен ваш совет)</span>
@@ -112,7 +112,7 @@
             <h2 class="client__title primary-title-over">Контактные данные (владельца кота)</h2>
 
             <div class="client__data">
-              <div class="client__input input error">
+              <div class="client__input input">
                 <label class="input__label additional-title-over" for="email">E-mail:*</label>
                 <input class="input__data additional-title-over" id="email" type="text" name="email" placeholder="kuklachev@gmail.com">
               </div>
