@@ -1,16 +1,13 @@
 .catalog {
   outline: 1px solid #d9d9d9;
 
-  &__title {
+  .catalog__title {
     color: #000000;
+    text-align: left;
 
     width: 280px;
     margin: 27px auto 41px;
   }
-}
-
-.cards__list {
-  .configuring-list();
 }
 
 @media (min-width: @tablet-width) {
@@ -18,24 +15,12 @@
     margin: 0 auto;
     outline: 1px solid transparent;
 
-    &__title {
+    .catalog__title {
       .main-title-tablet();
       text-align: left;
 
       width: 708px;
       margin: 0 30px 163px;
-    }
-  }
-
-  .cards {
-    width: 708px;
-    margin: 0 30px;
-
-    &__list {
-      display: grid;
-      grid-template-columns: 324px 324px;
-      column-gap: 60px;
-      row-gap: 141px;
     }
   }
 }
@@ -44,21 +29,9 @@
   .catalog {
     margin: 0 auto;
 
-    &__title {
+    .catalog__title {
       width: 1220px;
       margin: 0 110px 165px;
-    }
-  }
-
-  .cards {
-    width: 1220px;
-    margin: 0 110px;
-
-    &__list {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
     }
   }
 }

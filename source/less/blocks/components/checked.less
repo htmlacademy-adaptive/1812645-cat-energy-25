@@ -1,9 +1,13 @@
 .checked {
   position: relative;
+}
 
-  &__desc {
-    padding-left: 46px;
-  }
+.checked:hover .checked-mark {
+  border: 1px solid #878787;
+}
+
+.checked__desc {
+  padding-left: 46px;
 }
 
 .checked-mark {
@@ -20,8 +24,8 @@
 
 .checked__input:checked + .checked-mark::before {
   position: absolute;
-  top: 2px;
-  left: 2px;
+  top: 6px;
+  left: 4px;
 
   content: url(@img-tick);
   width: 30px;
@@ -30,14 +34,28 @@
 
 @media (min-width: @tablet-width) {
   .checked {
-    &__desc {
+    .checked__desc {
       .secondary-title-2030();
       color: #000000;
+
+      padding-left: 59px;
     }
   }
 
   .checked-mark {
     position: absolute;
-    top: -1px;
+    top: -5px;
+
+    width: 40px;
+    height: 40px;
+  }
+
+  .checked__input:checked + .checked-mark::before {
+    position: absolute;
+    top: 10px;
+    left: 9px;
+
+    width: 40px;
+    height: 40px;
   }
 }

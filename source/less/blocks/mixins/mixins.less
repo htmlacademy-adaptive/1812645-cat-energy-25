@@ -13,6 +13,14 @@
   display: block;
 }
 
+.reset-button() {
+  display: block;
+  border: none;
+  padding: 0;
+
+  cursor: pointer;
+}
+
 .program__img(@_top, @_left, @_width, @_height, @_path-to-img) {
   position: absolute;
   top: @_top;
@@ -63,4 +71,36 @@
 
   padding: 6px 0 8px;
   border-bottom: 1px solid #cdcdcd;
+}
+
+// Кнопка навигации index.html, mobile
+.header-button(@top, @left) {
+  content: "";
+  position: absolute;
+  top: @top;
+  left: @left;
+  width: 24px;
+  height: 1.5px;
+  background-color: #000000;
+}
+
+// Миксины для form.less
+.line-right(@top, @width) {
+  position: absolute;
+  top: @top;
+  right: 0;
+  width: @width;
+
+  content: "";
+  border-top: 2px solid #68b738;
+}
+
+.line-left(@top, @width) {
+  position: absolute;
+  top: @top;
+  left: 0;
+  width: @width;
+
+  content: "";
+  border-top: 2px solid #68b738;
 }

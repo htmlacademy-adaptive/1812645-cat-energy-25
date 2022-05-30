@@ -1,17 +1,12 @@
 .nav__list {
   .configuring-list();
 
-  display: none;
   position: absolute;
   z-index: 3;
 
   width: 100%;
   background-color: #ffffff;
   border-top: 1px solid #e6e6e6;
-}
-
-.nav--show {
-  display: block;
 }
 
 .nav__item {
@@ -25,21 +20,27 @@
     content: "";
     border-bottom: 1px solid #e6e6e6;
   }
+}
 
-  .nav__link {
-    .configuring-link();
+.nav__link {
+  .configuring-link();
 
-    width: 280px;
-    margin: 0 auto;
-    padding: 22px 0 24px;
-  }
+  width: 280px;
+  margin: 0 auto;
+  padding: 22px 0 24px;
+}
+
+.nav__link:hover {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 @media (min-width: @tablet-width) {
   .nav__list {
+    position: relative;
     display: flex;
     flex-direction: row;
-    position: relative;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 
     width: 100%;
     border-top: 1px solid transparent;
@@ -68,10 +69,16 @@
       padding: 8px 0;
     }
   }
+
+  .nav__link:hover {
+    color: rgba(0, 0, 0, 0.5);
+  }
 }
 
 @media (min-width: @desktop-width) {
   .nav__list {
+    max-width: 600px;
+
     &:not(.nav__list--not-index) {
       background-color: transparent;
     }
@@ -86,6 +93,10 @@
       color: #ffffff;
       padding: 20px 0 10px;
     }
+
+    .nav__link:hover {
+      color: rgba(255, 255, 255, 0.5);
+    }
   }
 
   .nav__list--not-index {
@@ -95,6 +106,10 @@
 
     .nav__link {
       color: #111111;
+    }
+
+    .nav__link:hover {
+      color: rgba(17, 17, 17, 0.5);
     }
   }
 }

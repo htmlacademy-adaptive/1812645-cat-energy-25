@@ -5,12 +5,12 @@ let photos_item_2 = document.querySelector('.photos__item-2');
 let slide_switch = document.querySelector('.slide-switch__mark');
 
 btn_it_was.addEventListener('click', function() {
-  photos_item_1.classList.remove('photos__item--disabled');
-  photos_item_2.classList.add('photos__item--disabled');
+  photos_item_1.classList.remove('disabled');
+  photos_item_2.classList.add('disabled');
   slide_switch.classList.remove('::before');
 });
 
 btn_has_become.addEventListener('click', function() {
-  photos_item_2.classList.remove('photos__item--disabled');
-  photos_item_1.classList.add('photos__item--disabled');
+  photos_item_2.classList.remove('disabled');
+  photos_item_1.classList.add('disabled');
 });

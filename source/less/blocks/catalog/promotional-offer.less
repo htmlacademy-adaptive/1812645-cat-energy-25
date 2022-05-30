@@ -7,6 +7,12 @@
   background-image: url(@img-cat-in-case);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(@img-cat-in-case2x);
+    background-size: 280px auto;
+  }
 
   &::before {
     position: absolute;
@@ -38,6 +44,13 @@
     height: 209px;
     margin: 0 30px 76px;
 
+    background-image: url(@img-cat-in-case-tablet);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(@img-cat-in-case-tablet2x);
+      background-size: 707px auto;
+    }
+
     &::before {
       position: absolute;
       top: 56px;
@@ -56,6 +69,13 @@
 
 @media (min-width: @desktop-width) {
   .promotional-offer {
+    background-image: url(@img-cat-in-case);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(@img-cat-in-case2x);
+      background-size: 280px auto;
+    }
+
     &::before {
       position: absolute;
       left: 84px;

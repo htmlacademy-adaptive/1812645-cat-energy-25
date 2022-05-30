@@ -1,0 +1,24 @@
+.cat {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.cat__input:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+@media (min-width: @tablet-width) {
+  .cat {
+    width: 630px;
+  }
+
+  .cat__input:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .cat {
+    width: 569px;
+  }
+}

@@ -1,0 +1,31 @@
+.goal {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.goal__radio:not(:last-child) {
+  margin-bottom: 29px;
+}
+
+@media (min-width: @tablet-width) {
+  .goal {
+    box-sizing: border-box;
+
+    width: 630px;
+    padding: 25px 0 25px 28px;
+    margin: 0 auto;
+
+    border: 1px solid #e7e7e7;
+  }
+
+  .goal__radio:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .goal {
+    box-sizing: border-box;
+    width: 569px;
+  }
+}

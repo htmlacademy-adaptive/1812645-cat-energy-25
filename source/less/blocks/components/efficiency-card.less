@@ -5,8 +5,8 @@
 
 .efficiency-card__img(@_path-to-img) {
   position: absolute;
-  top: -3px;
-  left: -1px;
+  top: -2px;
+  left: 0;
 
   width: 60px;
   height: 60px;
@@ -44,12 +44,12 @@
     display: flex;
     flex-direction: column;
 
-    width: 230px;
+    width: 232px;
   }
 
   .efficiency-card__img(@_path-to-img) {
     position: absolute;
-    top: 40px;
+    top: 43px;
     left: 0;
 
     width: 80px;
@@ -64,32 +64,27 @@
   .efficiency-card__number(@_number) {
     position: absolute;
     top: 0;
-    right: 0;
+    right: -12px;
     z-index: -1;
 
     content: @_number;
-    font-family: "Oswald", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 280px;
-    line-height: 280px;
-    color: #f2f2f2;
+    .main-title-280280();
   }
 
   .efficiency-card__img-1::before {
-    .efficiency-card__img("../../img/icon-leaf.svg");
+    .efficiency-card__img(@img-icon-leaf);
   }
 
   .efficiency-card__img-2::before {
-    .efficiency-card__img("../../img/icon-tub.svg");
+    .efficiency-card__img(@img-icon-tub);
   }
 
   .efficiency-card__img-3::before {
-    .efficiency-card__img("../../img/icon-eat.svg");
+    .efficiency-card__img(@img-icon-eat);
   }
 
   .efficiency-card__img-4::before {
-    .efficiency-card__img("../../img/icon-watch.svg");
+    .efficiency-card__img(@img-icon-watch);
   }
 
   .efficiency-card__img-1::after {
@@ -109,11 +104,7 @@
   }
 
   .efficiency-card__desc {
-    font-family: "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    .text-secondary-1624();
     color: #444444;
 
     margin: 0;
