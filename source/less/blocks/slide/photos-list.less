@@ -14,8 +14,25 @@
 
 @media (min-width: @tablet-width) {
   .photos__list {
+    display: flex;
     position: absolute;
-    top: -176px;
+    top: -169px;
+
+    width: 592px;
+    height: 511px;
+  }
+
+  .photos__item-1 {
+    overflow: hidden;
+  }
+
+  .photos__item-2 {
+    overflow: hidden;
+
+    img {
+      position: relative;
+      left: -265px;
+    }
   }
 
   .photos__img {
@@ -24,5 +41,9 @@
 
     object-fit: fill;
     background-repeat: no-repeat;
+  }
+
+  .disabled {
+    display: block;
   }
 }
